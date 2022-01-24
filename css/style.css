@@ -1,0 +1,60 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px*/
+  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  height: 100%;
+  background-color: #D5E1EF;
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8.5rem 2.7rem;
+}
+
+.card {
+  max-width: 32rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1.6rem;
+  box-shadow:0px 25px 25px rgba(0, 0, 0, 0.0476518);
+  
+}
+
+.card__h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card__img {
+  border-radius: 20px;
+}
+
+.card__p {
+  text-align: center;
+  color: #7D889E;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1.6rem 3.2rem;
+}
+
+.attribution {
+  text-align: center;
+}
